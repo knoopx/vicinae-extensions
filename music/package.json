@@ -1,0 +1,83 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "music-library-manager",
+  "title": "Music Library Manager",
+  "description": "A sophisticated music library manager with intelligent scanning, collection management, and advanced filtering capabilities.",
+  "icon": "command-icon.png",
+  "author": "knoopx",
+  "categories": [
+    "Media"
+  ],
+  "license": "MIT",
+  "version": "1.0.0",
+  "keywords": [
+    "music",
+    "library",
+    "manager",
+    "collection",
+    "metadata",
+    "audio"
+  ],
+  "commands": [
+    {
+      "name": "search-music",
+      "title": "Search Music",
+      "subtitle": "Music Library Manager",
+      "description": "Search and browse your music library with advanced filtering.",
+      "mode": "view"
+    },
+    {
+      "name": "scan-library",
+      "title": "Scan Music Library",
+      "subtitle": "Music Library Manager",
+      "description": "Scan your music directory for new releases and update the library.",
+      "mode": "no-view"
+    },
+    {
+      "name": "manage-collections",
+      "title": "Manage Collections",
+      "subtitle": "Music Library Manager",
+      "description": "Create and manage custom music collections.",
+      "mode": "view"
+    }
+  ],
+  "preferences": [
+    {
+      "name": "musicDirectory",
+      "type": "directory",
+      "required": false,
+      "title": "Music Directory",
+      "description": "Path to your music library",
+      "default": "~/Music"
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.102.4",
+    "music-metadata": "^10.0.0"
+  },
+  "devDependencies": {
+    "@raycast/utils": "^2.2.0",
+    "@testing-library/jest-dom": "^6.7.0",
+    "@testing-library/react": "^16.3.0",
+    "@types/jest": "^30.0.0",
+    "@types/node": "24.3.0",
+    "@types/react": "19.1.10",
+    "@vitest/ui": "^3.2.4",
+    "eslint": "^9.33.0",
+    "jsdom": "^26.1.0",
+    "prettier": "3.6.2",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  },
+  "scripts": {
+    "build": "ray build -e dist",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint",
+    "publish": "ray publish",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest run --coverage"
+  }
+}

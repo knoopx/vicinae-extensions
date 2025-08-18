@@ -1,0 +1,14 @@
+{
+  "name": "firefox-bookmarks",
+  "title": "Firefox Bookmarks",
+  "description": "Integrate bookmarks from Firefox.",
+  "icon": "extension-icon.png",
+  "author": "thomaslombart",
+  "commands": [
+    {
+      "name": "index",
+      "title": "Search Firefox Bookmarks",
+      "mode": "view"
+    }
+  ]
+}
