@@ -9,7 +9,7 @@ import {
   Keyboard,
 } from "@raycast/api";
 import { useState, useEffect, useMemo } from "react";
-import { useCachedState } from "@raycast/utils";
+
 import { basename } from "path";
 import { ReleaseData } from "./types";
 import { StarredManager } from "./starred";
@@ -22,7 +22,7 @@ import { promisify } from "util";
 const execAsync = promisify(exec);
 
 export default function SearchMusic() {
-  const [releases, setReleases] = useCachedState<ReleaseData[]>("releases", []);
+  const [releases, setReleases] = useState<ReleaseData[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [query, setQuery] = useState("");
   const [starredOnly, setStarredOnly] = useState(false);
@@ -43,7 +43,7 @@ export default function SearchMusic() {
 
     try {
       const cachedReleases = loadReleasesFromCache();
-      
+
       if (cachedReleases.length > 0) {
         setReleases(cachedReleases);
         showToast({
