@@ -7,7 +7,7 @@ import {
   Icon,
   Color,
   Keyboard,
-} from "@raycast/api";
+} from "@vicinae/api";
 import { useState, useEffect, useMemo } from "react";
 
 import { basename } from "path";

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "bluetooth-devices",
+  "title": "Bluetooth Devices",
+  "description": "Manage Bluetooth devices using command line tools",
+  "icon": "bluetooth",
+  "author": "knoopx",
+  "contributors": [],
+  "license": "MIT",
+
+  "commands": [
+    {
+      "name": "list-bluetooth-devices",
+      "title": "List Bluetooth Devices",
+      "description": "List and manage Bluetooth devices",
+      "mode": "view"
+    }
+  ],
+  "dependencies": {
+    "@vicinae/api": "^0.6.2"
+  },
+  "scripts": {
+    "build": "vici build",
+    "dev": "vici develop"
+  }
+}

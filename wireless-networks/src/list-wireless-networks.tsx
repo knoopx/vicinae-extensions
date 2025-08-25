@@ -1,4 +1,4 @@
-import { List, ActionPanel, Action, showToast, Toast, Form, useNavigation } from "@raycast/api"
+import { List, ActionPanel, Action, showToast, Toast, Form, useNavigation } from "@vicinae/api"
 import { useState, useEffect } from "react"
 import { exec } from "child_process"
 

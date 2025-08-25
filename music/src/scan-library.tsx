@@ -1,4 +1,4 @@
-import { showToast, Toast } from "@raycast/api";
+import { showToast, Toast } from "@vicinae/api";
 import { scanMusicDirectory } from "./scanner";
 import { saveReleasesToCache } from "./cache";
 

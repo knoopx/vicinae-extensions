@@ -12,7 +12,7 @@ import {
   Toast,
   Icon,
   Keyboard,
-} from "@raycast/api";
+} from "@vicinae/api";
 import { exec } from "child_process";
 
 async function getProcessList(): Promise<Process[]> {

@@ -3,7 +3,7 @@
   "name": "music-library-manager",
   "title": "Music Library Manager",
   "description": "A sophisticated music library manager with intelligent scanning, collection management, and advanced filtering capabilities.",
-  "icon": "command-icon.png",
+  "icon": "music",
   "author": "knoopx",
   "categories": [
     "Media"
@@ -52,32 +52,12 @@
     }
   ],
   "dependencies": {
-    "@raycast/api": "^1.102.4",
+    "@vicinae/api": "^0.4.0",
     "music-metadata": "^10.0.0"
   },
-  "devDependencies": {
-    "@raycast/utils": "^2.2.0",
-    "@testing-library/jest-dom": "^6.7.0",
-    "@testing-library/react": "^16.3.0",
-    "@types/jest": "^30.0.0",
-    "@types/node": "24.3.0",
-    "@types/react": "19.1.10",
-    "@vitest/ui": "^3.2.4",
-    "eslint": "^9.33.0",
-    "jsdom": "^26.1.0",
-    "prettier": "3.6.2",
-    "typescript": "^5.9.2",
-    "vitest": "^3.2.4"
-  },
+
   "scripts": {
-    "build": "ray build -e dist",
-    "dev": "ray develop",
-    "fix-lint": "ray lint --fix",
-    "lint": "ray lint",
-    "publish": "ray publish",
-    "test": "vitest",
-    "test:run": "vitest run",
-    "test:ui": "vitest --ui",
-    "test:coverage": "vitest run --coverage"
+    "build": "vici build",
+    "dev": "vici develop"
   }
 }

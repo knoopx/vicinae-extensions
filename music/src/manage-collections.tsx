@@ -5,7 +5,7 @@ import {
   showToast,
   Toast,
   Icon,
-} from "@raycast/api";
+} from "@vicinae/api";
 import { useState, useEffect } from "react";
 import { loadCollections, saveCollection } from "./cache";
 

@@ -11,7 +11,7 @@ import {
   getPreferenceValues,
   showToast,
   Toast,
-} from "@raycast/api";
+} from "@vicinae/api";
 import ini from "ini";
 import { useEffect, useMemo, useState } from "react";
 import initSqlJs, { Database } from "sql.js";

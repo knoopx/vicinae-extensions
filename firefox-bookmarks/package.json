@@ -1,10 +1,10 @@
 {
   "$schema": "https://www.raycast.com/schemas/extension.json",
-  "type": "module",
+
   "name": "firefox-bookmarks",
   "title": "Firefox Bookmarks",
   "description": "Integrate bookmarks from Firefox.",
-  "icon": "extension-icon.png",
+  "icon": "bookmark",
   "author": "thomaslombart",
   "owner": "raycast",
   "access": "public",
@@ -55,34 +55,16 @@
     }
   ],
   "dependencies": {
-    "@raycast/api": "^1.102.4",
-    "@raycast/utils": "^2.2.0",
+    "@vicinae/api": "^0.4.0",
     "fuse.js": "^7.1.0",
     "ini": "^5.0.0",
     "simple-plist": "^1.3.1",
     "sql.js": "^1.13.0"
   },
-  "devDependencies": {
-    "@eslint/compat": "^1.3.2",
-    "@eslint/eslintrc": "^3.3.1",
-    "@eslint/js": "^9.33.0",
-    "@raycast/eslint-config": "^2.0.4",
-    "@types/ini": "^4.1.1",
-    "@types/node": "24.3.0",
-    "@types/plist": "^3.0.5",
-    "@types/react": "19.1.10",
-    "@types/sql.js": "^1.4.9",
-    "@typescript-eslint/eslint-plugin": "^8.39.1",
-    "@typescript-eslint/parser": "^8.39.1",
-    "eslint": "^9.33.0",
-    "eslint-plugin-import": "^2.32.0",
-    "eslint-plugin-react-hooks": "^5.2.0",
-    "prettier": "3.6.2",
-    "typescript": "^5.9.2"
-  },
+
   "scripts": {
-    "build": "ray build -e dist",
-    "dev": "ray develop",
+    "build": "vici build",
+    "dev": "vici develop",
     "fix-lint": "ray lint --fix",
     "lint": "ray lint",
     "publish": "ray publish"

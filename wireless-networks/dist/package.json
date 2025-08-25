@@ -11,7 +11,7 @@
     "Productivity"
   ],
   "license": "MIT",
-
+  "type": "module",
   "commands": [
     {
       "name": "list-wireless-networks",

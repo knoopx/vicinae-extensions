@@ -1,13 +1,12 @@
 # AGENTS.md
 
-Mono-repo of Raycast extensions (https://developers.raycast.com/)
+Mono-repo of vicinae extensions (https://github.com/vicinaehq/vicinae/)
 
 - LINUX ONLY SUPPORT, NO MAC/DARWIN SUPPORT
 
 **Build, Lint, and Test:**
 
 - `cd [extension-folder] && bun run build`
-- `cd [extension-folder] && bunx ray lint --fix`
 
 **Install Deps:**
 
@@ -30,11 +29,7 @@ Mono-repo of Raycast extensions (https://developers.raycast.com/)
   - PascalCase for React components.
 - **Error Handling:**
   - Use try/catch for async operations.
-  - Show user feedback via Raycast `showToast` API.
+  - Show user feedback via vicinae `showToast` API.
 - **General:**
-  - Follow Raycast ESLint config and React Hooks best practices.
+  - Follow vicinae ESLint config and React Hooks best practices.
   - Keep code in `src/` directory.
-
-## Data Structure Patterns
-
-- **Raycast List.Dropdown**: Always include `value` prop for controlled components
