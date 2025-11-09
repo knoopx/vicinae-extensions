@@ -279,17 +279,17 @@ export default function Command() {
       isShowingDetail={true}
       searchBarPlaceholder="Enter your text prompt..."
       onSearchTextChange={setPrompt}
-      searchBarAccessory={
-        <List.Dropdown tooltip="AI Model" onChange={handleModelChange}>
-          {textModels.map((model) => (
-            <List.Dropdown.Item
-              key={model.value}
-              title={model.title}
-              value={model.value}
-            />
-          ))}
-        </List.Dropdown>
-      }
+       searchBarAccessory={
+         <List.Dropdown tooltip="AI Model" value={model} onChange={handleModelChange}>
+           {textModels.map((model) => (
+             <List.Dropdown.Item
+               key={model.value}
+               title={model.title}
+               value={model.value}
+             />
+           ))}
+         </List.Dropdown>
+       }
     >
       <HistoryList
         history={history}

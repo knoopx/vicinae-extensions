@@ -158,17 +158,17 @@ export default function Command() {
       isShowingDetail={true}
       searchBarPlaceholder="Enter your image prompt..."
       onSearchTextChange={setPrompt}
-      searchBarAccessory={
-        <List.Dropdown tooltip="AI Model" onChange={handleModelChange}>
-          {imageModels.map((model) => (
-            <List.Dropdown.Item
-              key={model.value}
-              title={model.title}
-              value={model.value}
-            />
-          ))}
-        </List.Dropdown>
-      }
+       searchBarAccessory={
+         <List.Dropdown tooltip="AI Model" value={model} onChange={handleModelChange}>
+           {imageModels.map((model) => (
+             <List.Dropdown.Item
+               key={model.value}
+               title={model.title}
+               value={model.value}
+             />
+           ))}
+         </List.Dropdown>
+       }
     >
       <HistoryList
         history={history}

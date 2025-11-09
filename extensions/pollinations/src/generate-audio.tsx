@@ -108,17 +108,17 @@ export default function Command() {
       isShowingDetail={true}
       searchBarPlaceholder="Enter text to convert to speech..."
       onSearchTextChange={setPrompt}
-      searchBarAccessory={
-        <List.Dropdown tooltip="Voice" onChange={handleVoiceChange}>
-          {AUDIO_VOICES.map((voice) => (
-            <List.Dropdown.Item
-              key={voice.value}
-              title={voice.title}
-              value={voice.value}
-            />
-          ))}
-        </List.Dropdown>
-      }
+       searchBarAccessory={
+         <List.Dropdown tooltip="Voice" value={voice} onChange={handleVoiceChange}>
+           {AUDIO_VOICES.map((voice) => (
+             <List.Dropdown.Item
+               key={voice.value}
+               title={voice.title}
+               value={voice.value}
+             />
+           ))}
+         </List.Dropdown>
+       }
     >
       <HistoryList
         history={history}
