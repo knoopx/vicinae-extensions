@@ -1,0 +1,129 @@
+{
+  "$schema": "https://raw.githubusercontent.com/vicinaehq/vicinae/refs/heads/main/extra/schemas/extension.json",
+  "name": "tasks",
+  "title": "Tasks",
+  "description": "Manage your tasks and agenda with advanced scheduling and recurring tasks",
+  "categories": [
+    "Productivity"
+  ],
+  "license": "MIT",
+  "author": "knoopx",
+  "contributors": [],
+  "pastContributors": [],
+  "icon": "extension_icon.png",
+   "commands": [
+     {
+       "name": "tasks",
+       "title": "Tasks",
+       "description": "View and manage your tasks",
+       "mode": "view"
+     },
+     {
+       "name": "agenda",
+       "title": "Agenda",
+       "description": "View tasks in agenda format grouped by time periods",
+       "mode": "view"
+     },
+     {
+       "name": "calendar",
+       "title": "Calendar",
+       "description": "View tasks in calendar format",
+       "mode": "view"
+     }
+   ],
+  "preferences": [
+    {
+      "name": "morning",
+      "type": "textfield",
+      "title": "Morning Hour",
+      "description": "Hour value for morning (0-23)",
+      "default": "9",
+      "required": true
+    },
+    {
+      "name": "afternoon",
+      "type": "textfield",
+      "title": "Afternoon Hour",
+      "description": "Hour value for afternoon (0-23)",
+      "default": "15",
+      "required": true
+    },
+    {
+      "name": "evening",
+      "type": "textfield",
+      "title": "Evening Hour",
+      "description": "Hour value for evening (0-23)",
+      "default": "18",
+      "required": true
+    },
+    {
+      "name": "night",
+      "type": "textfield",
+      "title": "Night Hour",
+      "description": "Hour value for night (0-23)",
+      "default": "22",
+      "required": true
+    },
+    {
+      "name": "winter",
+      "type": "textfield",
+      "title": "Winter Month",
+      "description": "Month value for winter (1-12)",
+      "default": "12",
+      "required": true
+    },
+    {
+      "name": "spring",
+      "type": "textfield",
+      "title": "Spring Month",
+      "description": "Month value for spring (1-12)",
+      "default": "3",
+      "required": true
+    },
+    {
+      "name": "summer",
+      "type": "textfield",
+      "title": "Summer Month",
+      "description": "Month value for summer (1-12)",
+      "default": "6",
+      "required": true
+    },
+    {
+      "name": "autumn",
+      "type": "textfield",
+      "title": "Autumn Month",
+      "description": "Month value for autumn (1-12)",
+      "default": "9",
+      "required": true
+    },
+     {
+       "name": "weekendDays",
+       "type": "textfield",
+       "title": "Weekend Days",
+       "description": "Comma-separated list of weekend day numbers (0=Sunday, 1=Monday, etc.)",
+       "default": "0,6",
+       "required": true
+     }
+  ],
+  "scripts": {
+    "build": "vici build",
+    "dev": "vici develop",
+    "lint": "eslint . --ext .ts,.tsx",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@vicinae/api": "^0.15.5",
+    "@rschedule/core": "^1.4.0",
+    "@rschedule/luxon-date-adapter": "^1.4.0",
+    "luxon": "^3.4.4",
+    "peggy": "^5.0.6"
+  },
+  "devDependencies": {
+    "@raycast/eslint-config": "^2.1.1",
+    "@types/luxon": "^3.4.4",
+    "@types/node": "^20.0.0",
+    "eslint": "^9.39.1",
+    "prettier": "^3.6.2",
+    "typescript": "^5.9.3"
+  }
+}
