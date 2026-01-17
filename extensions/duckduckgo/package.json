@@ -1,0 +1,29 @@
+{
+  "$schema": "https://raw.githubusercontent.com/vicinaehq/vicinae/refs/heads/main/extra/schemas/extension.json",
+  "name": "duckduckgo",
+  "title": "DuckDuckGo",
+  "description": "Search the web using DuckDuckGo",
+  "icon": "ddg-logo.png",
+  "author": "knoopx",
+  "license": "MIT",
+  "commands": [
+    {
+      "icon": "ddg-logo.png",
+      "name": "search",
+      "title": "Search",
+      "description": "Search the web using DuckDuckGo API.",
+      "mode": "view"
+    }
+  ],
+  "dependencies": {
+    "@vicinae/api": "^0.16.0",
+    "cheerio": "^1.0.0-rc.12"
+  },
+  "scripts": {
+    "build": "vici build",
+    "dev": "vici develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint",
+    "publish": "ray publish"
+  }
+}
