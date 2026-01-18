@@ -1,0 +1,70 @@
+{
+  "name": "pi-chat",
+  "title": "Pi",
+  "description": "Interact with Pi coding agent via RPC",
+  "version": "1.0.0",
+  "author": "knoopx",
+  "license": "MIT",
+  "icon": "icon.png",
+  "categories": ["Productivity", "Developer Tools"],
+  "keywords": ["pi", "coding", "agent", "ai"],
+  "commands": [
+    {
+      "name": "ask",
+      "title": "Ask Question",
+      "subtitle": "Pi",
+      "description": "Ask Pi via Vicinae",
+      "mode": "view"
+    },
+    {
+      "name": "saved",
+      "title": "Saved Answers",
+      "subtitle": "Pi",
+      "description": "Collection of your saved answers",
+      "mode": "view"
+    },
+    {
+      "name": "history",
+      "title": "History",
+      "subtitle": "Pi",
+      "description": "Collection of your recent answers",
+      "mode": "view"
+    },
+    {
+      "name": "conversation",
+      "title": "Conversations",
+      "subtitle": "Pi",
+      "description": "Collection of your recent conversations",
+      "mode": "view"
+    },
+    {
+      "name": "model",
+      "title": "Models",
+      "subtitle": "Pi",
+      "description": "Collection of your custom and default models",
+      "mode": "view"
+    }
+  ],
+  "preferences": [
+    {
+      "name": "useStream",
+      "title": "Stream Responses",
+      "description": "Stream responses from Pi in real-time",
+      "type": "checkbox",
+      "default": true
+    }
+  ],
+  "dependencies": {
+    "@vicinae/api": "^0.8.2",
+    "@types/uuid": "^9.0.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.1.0",
+    "typescript": "^5.9.2"
+  },
+  "scripts": {
+    "build": "vici build",
+    "dev": "vici develop"
+  }
+}
