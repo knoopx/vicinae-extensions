@@ -1,0 +1,40 @@
+{
+  "$schema": "https://raw.githubusercontent.com/vicinaehq/vicinae/refs/heads/main/extra/schemas/extension.json",
+  "name": "notes",
+  "title": "Notes",
+  "description": "Browse markdown notes from a local folder",
+  "categories": [
+    "Productivity"
+  ],
+  "license": "MIT",
+  "author": "knoopx",
+  "icon": "extension_icon.png",
+  "contributors": [],
+  "pastContributors": [],
+  "commands": [
+    {
+      "name": "notes",
+      "title": "Notes",
+      "subtitle": "Markdown",
+      "description": "List and preview markdown files from a root directory",
+      "mode": "view"
+    }
+  ],
+  "preferences": [
+    {
+      "name": "rootDirectory",
+      "type": "textfield",
+      "title": "Root Directory",
+      "description": "Root folder to scan for markdown files (subfolders included)",
+      "default": "~/Documents/",
+      "required": true
+    }
+  ],
+  "scripts": {
+    "build": "vici build",
+    "dev": "vici develop"
+  },
+  "dependencies": {
+    "@vicinae/api": "^0.17.2"
+  }
+}
