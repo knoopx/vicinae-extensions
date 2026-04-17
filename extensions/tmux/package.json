@@ -18,24 +18,6 @@
       "mode": "view"
     }
   ],
-  "preferences": [
-    {
-      "name": "terminalCommand",
-      "type": "textfield",
-      "title": "Terminal Command",
-      "description": "Command to open terminal (e.g., 'wezterm', 'gnome-terminal', 'alacritty', 'kitty')",
-      "default": "wezterm",
-      "required": true
-    },
-    {
-      "name": "terminalArgs",
-      "type": "textfield",
-      "title": "Terminal Arguments",
-      "description": "Arguments to pass to terminal command (e.g., 'start --' for wezterm, '--' for gnome-terminal)",
-      "default": "start --",
-      "required": false
-    }
-  ],
   "scripts": {
     "build": "vici build",
     "dev": "vici develop",
